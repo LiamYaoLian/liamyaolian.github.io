@@ -79,3 +79,17 @@ details summary::-webkit-details-marker {
 }
 
 p::first-line { text-indent: 3vh; }
+
+details summary:active{
+
+}
+
+:focus {
+  outline:0;
+  background-color:#FFFFFF00;
+
+}
+
+:active {
+  outline:0;
+}
