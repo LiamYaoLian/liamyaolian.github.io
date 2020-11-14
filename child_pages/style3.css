@@ -54,7 +54,7 @@ h2 {
   color:#cba135;
 }
 
-li {
+.no-bullet {
   list-style-type:none;
 }
 
@@ -71,3 +71,11 @@ li {
 details p{
   margin-top:3vh;
 }
+
+details summary::-webkit-details-marker {
+  color: #cba135;
+  margin-top:3vh;
+
+}
+
+p::first-line { text-indent: 3vh; }
