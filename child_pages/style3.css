@@ -38,3 +38,21 @@ h2 {
 }
 
 .w3-display-bottomleft{position:fixed;left:20px;bottom:10px}
+
+ {
+  text-decoration-color: black;
+}
+
+.article, a:link, a:visited {
+    text-decoration: none;
+    color:black;
+}
+
+.article, a:hover{
+  text-decoration: none;
+  color:#cba135;
+}
+
+li {
+  list-style-type:none;
+}
