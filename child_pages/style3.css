@@ -56,3 +56,9 @@ h2 {
 li {
   list-style-type:none;
 }
+
+
+
+.nav-link, .dropdown-item, .navbar-brand{
+  font-size:2.5vh;
+}
