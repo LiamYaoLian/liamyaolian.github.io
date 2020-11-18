@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <p>
+      Batch learning: Train with all the available data.
+      Online learning: train the system incrementally by feeding it data instances
+sequentially, either individually or by small groups called mini-batches.
+        Out-of-core learning: train huge datasets that
+  cannot fit in one machine’s main memory.
+        learning rate:
+            high: adapt to new data and forget old data quickly
+        if bad data is fed to the system, the system’s performance will gradually decline.
+
+      instance-based learning: the system learns the examples by heart, then
+generalizes to new cases using a similarity measure.
+      model-based learning: build a model and make predictions.
+
+
+
+
+
+    oecd_bli = pd.read_csv("oecd_bli_2015.csv", thousands=',')
+gdp_per_capita = pd.read_csv("gdp_per_capita.csv",thousands=',',delimiter='\t',
+encoding='latin1', na_values="n/a")
+
+
+
+    </p>
+    <p>
+      Main Challenges of Machine Learning
+      1. Insufficient Quantity of Training Data
+        sampling noise: the small sample is nonrepresentative due to chances
+      2. Nonrepresentative Training Data
+        sampling bias: sampling method is flawed
+      3. Poor quality data
+      noise: fix errors and discard outliers
+      instances missing a few features:
+        ignore this attribute,
+        ignore these instances
+        fill in the missing values (e.g., with the median
+age)
+
+      4. Features
+      Feature selection: selecting the most useful features, purge out irrelevant features
+      Feature extraction: combining existing features to produce a more useful one
+      Creating new features: gathering new data.
+      5. model selection
+
+
+
+
+    to-do: why regularization will work?
+
+    generalization error/out-of-sample
+error: The error rate on new cases is called the  (or ), and by
+    estimate generalization error: evaluating the model on the test set
+
+
+    train multiple models with various hyperparameters using the training
+set
+    select the model and hyperparameters that perform best on the cross-validation set
+    when you’re happy with your model, test on the test set
+
+    No Free Lunch (NFL) theorem: if you make absolutely
+no assumption about the data, then there is no reason to prefer one model over any
+other. There is no model that is a priori guaranteed to work better. The only way to know for sure which model is best is to evaluate them all. Since this is not
+possible, in practice you make some reasonable assumptions about the data and you
+evaluate only a few reasonable models.
+
+
+    </p>
+    <p>
+      1. Frame the problem
+      What are the goal and the current situation?
+      Supervised, unsupervised, or reinforcement?
+      classification, regression, or other?
+      batch learning or online learning?
+      2. Select a performance measure
+      For example, an RMSE
+equal to 50,000 means that about 68% of the system’s predictions fall within $50,000
+of the actual value, and about 95% of the predictions fall within $100,000 of the actual
+value. When a feature has a bell-shaped normal distribution (also called a Gaussian distribution), which is very common,
+the “68-95-99.7” rule applies: about 68% of the values fall within 1σ of the mean, 95% within 2σ, and
+99.7% within 3σ.
+      For example, suppose
+that there are many outlier districts. In that case, you may consider using the Mean
+Absolute Error (also called the Average Absolute Deviation.
+      ℓk norm of a vector v containing
+
+      3. Check assumptions
+      list all assumptions
+
+      4. Get the data
+      data size
+      
+      5.
+    </p>
+
+  </body>
+</html>
