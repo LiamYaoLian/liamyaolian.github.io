@@ -1,92 +1,642 @@
-<!DOCTYPE html>
-<html>
-<title>Work Ethics</title>
-<meta charset="UTF-8">
-<link rel="icon" type="image/png" href="../logo.png"/>
-<link rel="stylesheet" href="../bootstrap-4.5.3-dist/css/bootstrap.min.css">
-<link rel="stylesheet" href="style3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Work Ethics Checklist</title><style>
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
 
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
 
-<body>
-  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #ffffff00;">
-    <a class="navbar-brand" href="../index.html">Liam Lian</a>
-    <button class="navbar-toggler" style="background-color: #fff;" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
 
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Tech
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color:#ffffff00;border:none;">
-            <a class="dropdown-item" href="ds_and_bi.html">DS and BI</a>
-            <a class="dropdown-item" href="full_stack.html" >Full Stack</a>
-            <!-- <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Something else here</a> -->
-          </div>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="work_ethics.html" >Work Ethics</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="problem_solver.html" >Problem Solver</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="about.html" >About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="../index.html" >Home</a>
-        </li>
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
 
-      </ul>
-    </div>
-  </nav>
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
 
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
 
-<div class="container">
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
 
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
 
-    <h2>Work Ethics Checklist</h2>
-    <div class="paragragh">
-      <p>
-        Knowing the principles is different from implementing correctly, so a checklist is critical.
-      </p>
-      <p>
-        Click each step to see more. <br><br>
-      </p>
-      <details>
-        <summary >Step 1. Clarify the goal and the work scope first</summary>
-        <p>Trap 1: It is good to be proactive, take initiative, and think outside of the box for the team. However, sometimes taking initiative may backfire. One occasion is that the efforts misalign with the ultimate goal, come outside of the project scope, or unnecessarily increase the workload. The first step should be understanding the big picture – the goal of the team and the organization and the work scope.</p>
-        <li>
-          Test1asldkfj
-        </li>
-        <li>
-          Test1asldkfj
-        </li>
-        <li>
-          Test1asldkfj
-        </li>
-        <details class="children-toggle">
-          <summary>Test 2</summary>
-          <p>Test3</p>
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
 
-        </details>
-      </details>
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
 
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
 
-      <div class="w3-display-bottomleft" style="font-size:10px;">
-        © 2020 Liam Lian
-      </div>
-    </div>
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
 
-</div>
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
 
-</body>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-</script>
-</html>
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	text-indent: -1.7em;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "Hiragino Mincho Pro", "Songti TC", "Songti SC", "SimSun", "Nanum Myeongjo", NanumMyeongjo, Batang, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC', 'Noto Sans CJK KR'; }
+
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC', 'Noto Sans Mono CJK KR'; }
+
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "Hiragino Mincho Pro", "Songti TC", "Songti SC", "SimSun", "Nanum Myeongjo", NanumMyeongjo, Batang, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC', 'Noto Sans CJK KR'; }
+
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC', 'Noto Sans Mono CJK KR'; }
+
+.highlight-default {
+}
+.highlight-gray {
+	color: rgb(155,154,151);
+}
+.highlight-brown {
+	color: rgb(100,71,58);
+}
+.highlight-orange {
+	color: rgb(217,115,13);
+}
+.highlight-yellow {
+	color: rgb(223,171,1);
+}
+.highlight-teal {
+	color: rgb(15,123,108);
+}
+.highlight-blue {
+	color: rgb(11,110,153);
+}
+.highlight-purple {
+	color: rgb(105,64,165);
+}
+.highlight-pink {
+	color: rgb(173,26,114);
+}
+.highlight-red {
+	color: rgb(224,62,62);
+}
+.highlight-gray_background {
+	background: rgb(235,236,237);
+}
+.highlight-brown_background {
+	background: rgb(233,229,227);
+}
+.highlight-orange_background {
+	background: rgb(250,235,221);
+}
+.highlight-yellow_background {
+	background: rgb(251,243,219);
+}
+.highlight-teal_background {
+	background: rgb(221,237,234);
+}
+.highlight-blue_background {
+	background: rgb(221,235,241);
+}
+.highlight-purple_background {
+	background: rgb(234,228,242);
+}
+.highlight-pink_background {
+	background: rgb(244,223,235);
+}
+.highlight-red_background {
+	background: rgb(251,228,228);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(55, 53, 47, 0.6);
+	fill: rgba(55, 53, 47, 0.6);
+}
+.block-color-brown {
+	color: rgb(100,71,58);
+	fill: rgb(100,71,58);
+}
+.block-color-orange {
+	color: rgb(217,115,13);
+	fill: rgb(217,115,13);
+}
+.block-color-yellow {
+	color: rgb(223,171,1);
+	fill: rgb(223,171,1);
+}
+.block-color-teal {
+	color: rgb(15,123,108);
+	fill: rgb(15,123,108);
+}
+.block-color-blue {
+	color: rgb(11,110,153);
+	fill: rgb(11,110,153);
+}
+.block-color-purple {
+	color: rgb(105,64,165);
+	fill: rgb(105,64,165);
+}
+.block-color-pink {
+	color: rgb(173,26,114);
+	fill: rgb(173,26,114);
+}
+.block-color-red {
+	color: rgb(224,62,62);
+	fill: rgb(224,62,62);
+}
+.block-color-gray_background {
+	background: rgb(235,236,237);
+}
+.block-color-brown_background {
+	background: rgb(233,229,227);
+}
+.block-color-orange_background {
+	background: rgb(250,235,221);
+}
+.block-color-yellow_background {
+	background: rgb(251,243,219);
+}
+.block-color-teal_background {
+	background: rgb(221,237,234);
+}
+.block-color-blue_background {
+	background: rgb(221,235,241);
+}
+.block-color-purple_background {
+	background: rgb(234,228,242);
+}
+.block-color-pink_background {
+	background: rgb(244,223,235);
+}
+.block-color-red_background {
+	background: rgb(251,228,228);
+}
+.select-value-color-default { background-color: rgba(206,205,202,0.5); }
+.select-value-color-gray { background-color: rgba(155,154,151, 0.4); }
+.select-value-color-brown { background-color: rgba(140,46,0,0.2); }
+.select-value-color-orange { background-color: rgba(245,93,0,0.2); }
+.select-value-color-yellow { background-color: rgba(233,168,0,0.2); }
+.select-value-color-green { background-color: rgba(0,135,107,0.2); }
+.select-value-color-blue { background-color: rgba(0,120,223,0.2); }
+.select-value-color-purple { background-color: rgba(103,36,222,0.2); }
+.select-value-color-pink { background-color: rgba(221,0,129,0.2); }
+.select-value-color-red { background-color: rgba(255,0,26,0.2); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+</style></head><body><article id="ad9b8d91-2f3d-4256-965f-8092f9895a15" class="page sans"><header><div class="page-header-icon undefined"><span class="icon"></span></div><h1 class="page-title">Work Ethics Checklist</h1></header><div class="page-body"><p id="ec1b886d-d0f3-47fd-b65b-f4a53a5574e9" class="">Click each step to see more. </p><p id="12f3d056-678c-4970-8d31-b3afe730c1cb" class="">
+</p><ul id="da12576b-c4eb-4407-a81f-afdd58023a74" class="toggle"><li><details><summary>Step 1. Understand the Big Picture</summary><ul id="822b0957-8b25-4126-b176-a6c12746f14f" class="bulleted-list"><li>Understand the goals and the problems of the team and the whole organization, stakeholders, environments, requirements, schedules, budgets, risks, etc.</li></ul><ul id="d8eaf268-c368-4bec-a346-dcde22f12271" class="toggle"><li><details ><summary>Implicit assumptions</summary><p id="94af7ba2-68ca-4298-b45f-f09c651c88e2" class="">Implicit assumptions in the requirements are the main causes of misunderstanding. Confirm and make stakeholders sign off to avoid misunderstandings and disputes. </p><ul id="6086cd64-3fdd-49e2-a64e-74711b8881b6" class="toggle"><li><details ><summary>How strategy consultants spot Implicit assumptions and define problems </summary><p id="bd158d47-8b0b-42ef-af0e-ffe6b809452b" class="">Check every keyword in the work requirements.  </p><ul id="28ada256-ed5f-4c5f-be61-cf5853e035cc" class="toggle"><li><details ><summary>Example</summary><p id="996ccb92-f08b-4ac7-9315-cd489918a7c3" class="">If we are required to &quot;predict the sales generated by customers&quot;, there are several keywords :&quot;predict&quot;, &quot;sales&quot;, &quot;customers&quot;, and one implicit keyword - &quot;time&quot;.</p><ul id="3a8dcb45-7ad8-4b2b-8bbc-cdd5e03fc70f" class="bulleted-list"><li>&quot;Predict&quot;: Do stakeholders have any requirement about how to predict?</li></ul><ul id="a388d61e-2668-401a-9587-99392b7c5601" class="bulleted-list"><li>&quot;Sales&quot;: Should we use some accounting standards to define the sales?</li></ul><ul id="8ca513fa-8390-4cd4-8036-3093781bc97e" class="bulleted-list"><li>&quot;Customers&quot;: How do you define &quot;customers&quot;? For example, do we need to consider potential customers? Should we consider just a specific business line?</li></ul><ul id="e7d93a5d-1151-4cde-bbff-f5c0e67d45ba" class="bulleted-list"><li>&quot;Time&quot;: Which period does the question refer to?</li></ul></details></li></ul><p id="46bd69da-27f0-49b8-a18f-8f3ad00dc05a" class="">
+</p></details></li></ul><p id="1cb2e3e5-e068-464a-b6b6-d623657c7c0b" class="">
+</p></details></li></ul><ul id="ec520523-7eb0-47dc-bfc2-2f49116f20a2" class="toggle"><li><details ><summary>Trap: taking initiative in the wrong way</summary><p id="85ebeefd-ee2f-45e0-856c-bacbbb8d745c" class="">It is good to be proactive. However, taking initiative without seeing the big picture may lead to unsatisfactory results. This may sound obvious, but lots of junior employees fail to understand the big picture, especially when some expectations are implicit. </p></details></li></ul><p id="f45c8ad1-623e-487e-a8c9-6e2d3c75d34e" class="">
+</p></details></li></ul><ul id="fa436d94-d09d-4a93-b2e5-fecfd504cd93" class="toggle"><li><details ><summary>Step 2. Document take-aways after meetings and make stakeholders sign off</summary><ul id="79a78686-98bf-4811-a97b-ade8a61faf31" class="bulleted-list"><li>Purpose: Making stakeholders sign off will avoid misunderstandings and disputes in the future</li></ul><p id="aa0203e3-8e41-4ab4-8e18-1bfea19b350e" class="">
+</p></details></li></ul><ul id="8d03143e-fa94-40ac-a5b7-69e6d91288a7" class="toggle"><li><details ><summary>Step 3. Confirm priority and deadlines</summary></details></li></ul><ul id="f5f9e60b-84bb-44d4-a0ba-8f3dd1d9b382" class="toggle"><li><details ><summary>Step 4. Confirm file version, file naming conversion, and result presentation</summary><ul id="cd46bf22-8a81-4313-9a2d-8493e90a832b" class="bulleted-list"><li>Ensure one will work on the latest version. If necessary, add a suffix to the file name to avoid confusion. Move the file to appropriate folders timely. </li></ul><ul id="5e3f13d2-51df-4a41-b498-109e0137d960" class="bulleted-list"><li>Confirm the way to name the file. Sometimes we may assume others will understand the meaning of the file name, but it may not be the case. </li></ul><ul id="f3cebb81-00e0-48d4-945e-9ea7241a86cd" class="bulleted-list"><li>Add explanations so that stakeholders will understand. Keep in mind that the stakeholders have different backgrounds and speak different &quot;languages&quot;. </li></ul><ul id="5312bc29-d1e0-4748-83d0-ac853b7bb45d" class="bulleted-list"><li>Making the work user-friendly: confirm the format we should use to present the result. </li></ul><p id="1dddfd7c-e1dd-402a-9f05-3407fdd5dfb6" class="">
+</p></details></li></ul><ul id="48e2be2c-932d-495e-8f19-6d4a67d6da82" class="toggle"><li><details ><summary>Step 5. Examine the file received immediately</summary><ul id="d973cb37-aabe-4f8b-9c36-a5010f83e905" class="bulleted-list"><li>Purpose: If the data we received has some problems, communicate timely will avoid delay and interrupting others frequently. </li></ul><p id="5913b551-2bbd-4c23-88c7-1061443ee4ac" class="">
+</p><ul id="a8b1c9f6-44bf-42eb-9f38-d58dae58f6ac" class="toggle"><li><details ><summary>Check if we have all information necessary for the work</summary><p id="3cbd9128-f4b6-485b-950b-354dac20578b" class="">
+</p></details></li></ul><ul id="d87cb600-c20b-41ff-ad72-64b8af0f918e" class="toggle"><li><details ><summary>Clarify the meaning of data in the file and make stakeholders sign off</summary><p id="ff26224a-51a5-4300-bc95-15e5ae92fa17" class="">
+</p></details></li></ul><ul id="f3470a70-23c8-4c60-ba96-8cebf921478a" class="toggle"><li><details ><summary>Check data quality issues</summary><p id="ae20f771-0457-43e6-a3ef-d817d581c3d9" class="">See: <a href="https://liamyaolian.github.io/articles/data_quality_checklist.html">https://liamyaolian.github.io/articles/data_quality_checklist.html</a></p></details></li></ul><p id="8ec7a702-49a7-44a5-a194-0e75b733fa66" class="">
+</p><p id="639174e2-e4c2-43ab-bb36-7af1a8061543" class="">
+</p></details></li></ul><ul id="0f31ccc8-7503-429c-9226-0e600eaf0315" class="toggle"><li><details ><summary>Step 6. Proactively update progress, challenge, and several possible solutions every day</summary><ul id="225ba5c7-bce1-4316-afff-7da1662b7095" class="bulleted-list"><li>Proactively informing the supervisor of the progress will save them some work and energy.</li></ul><ul id="2efaada0-3472-4f91-befc-5ea3e6885dd1" class="bulleted-list"><li>If we face some challenges, do not put forward just the problem. Suggest some solutions and confirm. We are hired to solve problems. </li></ul><p id="e04fb9c6-454c-4308-9ce6-1cb0999ad373" class="">
+</p><p id="503333d5-b0b2-419a-8997-7f514395e29d" class="">
+</p></details></li></ul><ul id="2f75b874-5907-49ff-97b4-5ea737b9aa6b" class="toggle"><li><details ><summary>Step 7. Double-check before submitting</summary><ul id="305aeaad-c3f1-4a03-b7be-ee74230b79ce" class="bulleted-list"><li>Purpose: High-quality work without errors will win trust. </li></ul><p id="bade0d8f-f50c-455a-8547-987bcaaa364f" class="">
+</p><ul id="88e04407-7187-4667-ad0b-51cf34d68731" class="bulleted-list"><li>Checking whether the result makes sense in the business context will help spot the errors. </li></ul></details></li></ul><p id="9fe7fc37-b219-4d59-b6d6-dcfe9c6d5706" class="">
+</p></div></article></body></html>
